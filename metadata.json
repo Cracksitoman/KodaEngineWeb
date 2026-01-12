@@ -1,0 +1,8 @@
+{
+  "name": "Koda Engine - Crea sin límites",
+  "description": "Una plataforma profesional de motores de juegos para juegos pixel art 2D con programación visual basada en bloques y soporte para JavaScript.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
