@@ -4,15 +4,12 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  define: {
+    // Esto asegura que process.env esté disponible en el navegador
+    'process.env': process.env
+  },
   build: {
     outDir: 'dist',
-    rollupOptions: {
-      input: {
-        main: './index.html'
-      }
-    }
-  },
-  define: {
-    'process.env': process.env
+    sourcemap: false
   }
 });
